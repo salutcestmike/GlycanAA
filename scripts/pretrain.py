@@ -27,7 +27,7 @@ def save(solver, path):
 
 if __name__ == "__main__":
     args, vars = util.parse_args()
-    cfg = util.load_config(args.config, context=vars)
+    cfg = util.load_config(args.config, context = vars)
     working_dir = util.create_working_directory(cfg)
 
     torch.manual_seed(args.seed + comm.get_rank())
