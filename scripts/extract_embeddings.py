@@ -30,7 +30,7 @@ def getArgs():
     ap.add_argument("--batch_size", type = int, default = 256)
     ap.add_argument("--gpu", type = int, default = None)
 
-    return ap
+    return ap.parse_args()
 
 
 
