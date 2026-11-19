@@ -29,3 +29,5 @@ scratch/
 _*
 outputs
 *.csv
+!data/**/*.csv
+!outputs/*.csv
