@@ -93,3 +93,9 @@ If you find this codebase helpful in your research, please cite the following pa
   year={2025}
 }
 ```
+## Dataset comparison
+
+For dataset comparison, you should have IUPAC and WURCS notation of your glycans.
+You can get WURCS notation from IUPAC with `scripts/compare_datasets/iupac_to_wurcs_api.py --data [you_data] --output_file [output_file_name]`
+
+Then you can compare datasets based on the IUPAC or WURCS notation with `scripts/compare_datasets/common_canon_glycan_iupac.py --data_custom [first_dataset] --data_glycanAA [second_dataset] --output_dir [output_dir]` and `scripts/compare_datasets/common_canon_glycan_wurcs.py --data_custom [first_dataset] --data_glycanAA_wurcs [second_dataset] --output_dir [output_dir]` respectively.
